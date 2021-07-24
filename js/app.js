@@ -1,9 +1,16 @@
+import { obtenerUnaPregunta } from './preguntas.js'
+
 let  state = {
     cantidad_de_preguntas: 10,
     dificultad: 1,
-    nombre_de_usuario: 'Jugador'
+    nombre_de_usuario: 'Jugador',
+    pregunta: undefined,
+    score: 0
 }
 
+/**************************************
+ *           SECCIÓN MENU
+**************************************/
 
 const play_buton = document.getElementById('play')
 
@@ -18,6 +25,26 @@ play_buton.addEventListener('click', () => {
     preguntas.style.zIndex = 1
     puntaje.style.zIndex = 0
 
-    console.log('Estado actual:', state )
+    state.pregunta = obtenerUnaPregunta()
 
+    console.group("Estado")
+    console.log(state)
+    console.groupEnd()
+
+})
+
+/**************************************
+ *      SECCIÓN PREGUNTAS
+**************************************/
+const verificar_respuesta = document.getElementById('verificar_respuesta')
+const siguiente_pregunta = document.getElementById('siguiente_pregunta')
+
+verificar_respuesta.addEventListener('click', () => {
+    console.log("Verificando respuesta...")
+    siguiente_pregunta.style.display = "block"
+    verificar_respuesta.style.display = "none"
+})
+
+siguiente_pregunta.addEventListener('click', () => {
+    console.log("Siguiente pregunta...")
 })

@@ -1,6 +1,7 @@
 :root {
     --backcolor: #212642;
     --radio-backcolor: #2ec3e4;
+    --button-color: #d5a61b;
 }
 
 #menu {
@@ -24,26 +25,7 @@
 }
 
 #div2 button {
-    width: 300px;
-    padding: 0.5em 0.5em;
-    border-radius: 15px;
     font-size: 30px;
-    font-weight: bolder;
-
-    outline: none;
-    background-color: #d5a61b;
-    border: none;
-}
-
-#div2 button:active {
-    filter: brightness(1.1);
-}
-
-#div2 button:hover {
-    cursor: pointer;
-
-    box-shadow: 4px 4px 10px #363e69;
-    transition: 0.2s;
 }
 
 /*************************************************
