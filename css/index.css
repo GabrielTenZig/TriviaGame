@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    background-color: green;
+}
+
+#menu, 
+#preguntas,
+#puntaje {
+    width: 100%; 
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    position: absolute;
+}
+
+#menu {
+    z-index: 1;
+}
+
+/* RESET H3 ESTYLES */
+h3 {
+    margin: 0;
+}
