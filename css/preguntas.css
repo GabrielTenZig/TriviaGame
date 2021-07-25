@@ -7,19 +7,14 @@
     box-sizing: border-box;
 }
 
+/************************************************
+                SECCION PREGUNTA
+************************************************/
 #seccion_pregunta {
-
-    /* display: grid;
-    grid-template-rows: 1fr 4fr 2fr;
-    grid-template-columns: 1fr; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
-}
-
-#seccion_pregunta > * {
-    margin-bottom: min(3em, 5%);
 }
 
 #seccion_pregunta h3 {
@@ -33,7 +28,9 @@
     justify-content: center;
     align-items: center;
 }
-
+/***************************************
+        SECCION PREGUNTA - RESPUESTAS
+***************************************/
 #seccion_pregunta #seccion_respuestas {
     height: min(300px, 50%);
 
@@ -50,13 +47,28 @@
     /* border: 1px solid red; */
     width: 90%;
     height: 90%;
+    padding: 0 0 0 1em;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
 }
 
+#seccion_pregunta form div input {
+    /* display: none; */
+}
+
+#seccion_pregunta form div input:checked + label {
+    background-color: var(--radio-backcolor);
+    padding: 1% 2em;
+    border-radius: 10px;
+    color: var(--backcolor);
+    font-weight: bolder;
+}
+
+/**************************************
+        SECCION PREGUNTA - BOTONES
+**************************************/
 #seccion_pregunta #seccion_botones {
     display: flex;
     flex-direction: column;
@@ -76,9 +88,9 @@
 }
 
 
-/************************************
-            SECCION PERSONAJE
-************************************/
+/************************************************
+                SECCION PERSONAJE
+************************************************/
 #seccion-personaje {
     display: flex;
     flex-direction: column;
@@ -95,12 +107,18 @@
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
 
-    position: relative;
+    /* position: relative; */
+    /* display: flex;
+    justify-content: center; */
 }
 
 #seccion-personaje figure img {
-    width: 110%;
+    background-color: white;
+    /* width: 110%; */
     /* height: 500px; */
+    /* position: absolute; */
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #seccion-personaje p {
@@ -115,4 +133,9 @@
     font-family: sans-serif;
     text-align: justify;
     padding: 1em;
+
+    /* background-color: #af5545;
+    background-color: #40a740; */
+    /* color: white; */
+    font-size: 21px;
 }

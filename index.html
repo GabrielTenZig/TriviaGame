@@ -15,7 +15,7 @@
     <section id="menu">
         
         <div class="div" id="div1">
-            <img src="https://lh3.googleusercontent.com/keep-bbsk/AGk0z-PTIVk47Hd-cz5RWmhU5-88uubUabwd_RA5ZvQm97X4Ebr6eh5MbVhrsOxb9kw83wMfqB8jYYl8B8M1Xnz0MLd-UqLNKWHTecL6MQU=s799" alt="Personajes">
+            <img src="./images/menu/menu.png" alt="Personajes">
         </div>
 
         <div class="div" id="div2">
@@ -59,29 +59,28 @@
     <section id=preguntas>
         
         <div class="preguntas_div" id="seccion_pregunta">
-            <h3>¿Cual es el nombre de la novia de Sheldon?</h3>
+            <h3 id="texto_pregunta"></h3>
 
             <div id="seccion_respuestas">
                 <form action="">
-    
                     <div>
-                        <input type="radio" name="respuesta" id="respuesta1">
-                        <label for="respuesta1">Jermaioni</label>
+                        <input type="radio" name="respuesta" id="respuesta1" value="">
+                        <label for="respuesta1" id="respuesta1_label">A</label>
                     </div>
     
                     <div>
-                        <input type="radio" name="respuesta" id="respuesta2">
-                        <label for="respuesta2">Natalia Laforcade</label>
+                        <input type="radio" name="respuesta" id="respuesta2" value="">
+                        <label for="respuesta2" id="respuesta2_label">B</label>
                     </div>
     
                     <div>
-                        <input type="radio" name="respuesta" id="respuesta3">
-                        <label for="respuesta3">Eimy</label>
+                        <input type="radio" name="respuesta" id="respuesta3" value="">
+                        <label for="respuesta3" id="respuesta3_label">C</label>
                     </div>
     
                     <div>
-                        <input type="radio" name="respuesta" id="respuesta4">
-                        <label for="respuesta4">Lenard</label>
+                        <input type="radio" name="respuesta" id="respuesta4" value="">
+                        <label for="respuesta4" id="respuesta4_label">D</label>
                     </div>
                 </form>
             </div>
@@ -95,7 +94,8 @@
 
         <div class="preguntas_div" id="seccion-personaje">
             <figure>
-                <img src="./images/sheldon/sheldon_001.png" alt="personaje" draggable="false">
+                <img id="personaje" src="./images/sheldon/sheldon_001.png" alt="personaje" draggable="false">
+                <!-- <div id="imagen_del_personaje"></div> -->
             </figure>
             <p id="comentario_del_personaje">
             </p>
