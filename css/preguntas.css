@@ -11,23 +11,48 @@
                 SECCION PREGUNTA
 ************************************************/
 #seccion_pregunta {
+    padding: 1em;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
 }
 
-#seccion_pregunta h3 {
-    padding: 1em;
-    font-size: 24px;
-    text-align: justify;
-    color: white;
+#pregunta {
+    display: flex;
+}
+
+#pregunta__numero_pregunta {
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-right: 1em;
+    border-radius: 100%;
+
+    background-color: white;
     font-family: sans-serif;
+    color: var(--backcolor);
+    align-self: center;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+#pregunta__texto_pregunta {
+    font-size: min(7vw, 24px);
+    text-align: justify;
+    color: white;
+    font-family: sans-serif;
+
+    width: 90%;
+    display: inline-block;
+    text-align: justify;
+}
+
+
 /***************************************
         SECCION PREGUNTA - RESPUESTAS
 ***************************************/
@@ -38,13 +63,12 @@
     justify-content: center;
     align-items: center;
 
-    font-size: 20px;
+    font-size: min(6vw, 20px);
     color: white;
     font-family: sans-serif;
 }
 
-#seccion_pregunta form {
-    /* border: 1px solid red; */
+#seccion_respuestas form {
     width: 90%;
     height: 90%;
     padding: 0 0 0 1em;
@@ -52,18 +76,59 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
-#seccion_pregunta form div input {
-    /* display: none; */
+.destello-rojo {
+    animation: 0.8s 2 normal destello-rojo;
 }
 
-#seccion_pregunta form div input:checked + label {
+#seccion_respuestas form div {
+    /* border: 1px solid green; */
+}
+
+#seccion_respuestas form div input {
+    display: none;
+}
+
+#seccion_respuestas form div label {
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 100%;
+}
+
+#seccion_respuestas form div label::before {
+    content: '';
+    display: inline-block;
+    /* width: 0.6em; */
+    width: 0.5em;
+    height: 0.5em;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: min(2%, 1em);
+}
+
+#seccion_respuestas form div input:checked + label {
     background-color: var(--radio-backcolor);
     padding: 1% 2em;
+    box-sizing: border-box;
     border-radius: 10px;
     color: var(--backcolor);
     font-weight: bolder;
+}
+
+#seccion_respuestas form div input:checked + label::before {
+    /* content: none; */
+    background-color: var(--backcolor);
+}
+
+@keyframes destello-rojo {
+    from {
+        border: 3px solid red;
+    }
+    to {
+        border: none;
+    }
 }
 
 /**************************************
@@ -87,6 +152,13 @@
     background-color: #1b6e1b;
 }
 
+.boton-finalizar {
+    border: 2px solid ;
+    height: 50px;
+    width: 90%;
+    padding: 0;
+    font-size: 150%;
+}
 
 /************************************************
                 SECCION PERSONAJE
@@ -134,8 +206,7 @@
     text-align: justify;
     padding: 1em;
 
-    /* background-color: #af5545;
-    background-color: #40a740; */
-    /* color: white; */
     font-size: 21px;
+    font-size: min(5vw, 20px);
+
 }

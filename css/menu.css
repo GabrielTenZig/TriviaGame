@@ -1,5 +1,4 @@
 :root {
-    --backcolor: #212642;
     --radio-backcolor: #2ec3e4;
     --button-color: #d5a61b;
 }
@@ -11,29 +10,35 @@
     background-color: var(--backcolor);
 }
 
-.div {
+.menu__box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#div1 img {
+#menu_box1 img {
     background-color: #ff46028e;
     width: 30em;
     height: 10em;
     border-radius: 10px;
 }
 
-#div2 button {
+#menu_box2 button {
     font-size: 30px;
 }
 
 /*************************************************
         CANTIDAD DE PREGUNTAS Y DIFICULTAD
 *************************************************/
+#menu_box3,
+#menu_box4 {
+    /* border: 1px solid red; */
+    padding: 1em;
+}
 
-#div3 fieldset,
-#div4 fieldset {
+
+#menu_box3 fieldset,
+#menu_box4 fieldset {
     width: 30%;
     padding: 0.5em;
     border: none;
@@ -45,13 +50,13 @@
     justify-content: center;
 }
 
-#div3 fieldset input,
-#div4 fieldset input {
+#menu_box3 fieldset input,
+#menu_box4 fieldset input {
     display: none;
 }
 
-#div3 fieldset label,
-#div4 fieldset label {
+#menu_box3 fieldset label,
+#menu_box4 fieldset label {
     border: 1px solid gray;
     padding: 1em;
     width: 20%;
@@ -62,17 +67,17 @@
     align-items: center;
 }
 
-#div3 input:checked + label,
-#div4 input:checked + label {
+#menu_box3 input:checked + label,
+#menu_box4 input:checked + label {
     background-color: var(--radio-backcolor);
 }
 
-#div3 label:first-of-type,
-#div4 label:first-of-type {
+#menu_box3 label:first-of-type,
+#menu_box4 label:first-of-type {
     border-radius: 100px 0px 0px 100px;
 }
 
-#div3 label:last-of-type,
-#div4 label:last-of-type {
+#menu_box3 label:last-of-type,
+#menu_box4 label:last-of-type {
     border-radius: 0px 100px 100px 0px;
 }

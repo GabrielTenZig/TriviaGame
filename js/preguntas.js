@@ -1,9 +1,8 @@
 const obtenerUnaPregunta = () => {
     const min = 0
     const max = otroSetDePreguntas.length
-    console.log("Max:",max)
+
     let numRand = Math.floor( Math.random() * (max - min) + min )
-    console.log("Obteniendo la pregunta numero:", numRand)
     return otroSetDePreguntas[numRand]
 }
 

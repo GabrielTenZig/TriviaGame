@@ -14,30 +14,30 @@
 
     <section id="menu">
         
-        <div class="div" id="div1">
+        <div class="menu__box" id="menu_box1">
             <img src="./images/menu/menu.png" alt="Personajes">
         </div>
 
-        <div class="div" id="div2">
+        <div class="menu__box" id="menu_box2">
             <button class="main-button" id="play">VAMOS A JUGAR</button>
         </div>
 
-        <div class="div" id="div3">
+        <div class="menu__box" id="menu_box3">
             <fieldset>
                 <legend>¿Cuantas preguntas quieres?</legend>
 
-                <input type="radio" name="cantidad_de_preguntas" id="option1" value="10" checked>
+                <input type="radio" name="cantidad_de_preguntas" id="cantidad_preguntas_option1" value="10" checked>
                 <label for="option1"> 10 </label>
 
-                <input type="radio" name="cantidad_de_preguntas" id="option2" value="15">
+                <input type="radio" name="cantidad_de_preguntas" id="cantidad_preguntas_option2" value="15">
                 <label for="option2">15</label>
                 
-                <input type="radio" name="cantidad_de_preguntas" id="option3" value="20">
+                <input type="radio" name="cantidad_de_preguntas" id="cantidad_preguntas_option3" value="20">
                 <label for="option3">20</label>
             </fieldset>
         </div>
 
-        <div class="div" id="div4">
+        <div class="menu__box" id="menu_box4">
             <fieldset>
                 <legend>Elige la dificultad</legend>
 
@@ -59,12 +59,15 @@
     <section id=preguntas>
         
         <div class="preguntas_div" id="seccion_pregunta">
-            <h3 id="texto_pregunta"></h3>
+            <div id="pregunta">
+                <h3 id="pregunta__numero_pregunta"></h3>
+                <h3 id="pregunta__texto_pregunta"></h3>
+            </div>
 
             <div id="seccion_respuestas">
                 <form action="">
                     <div>
-                        <input type="radio" name="respuesta" id="respuesta1" value="">
+                        <input type="radio" name="respuesta" id="respuesta1" value="12">
                         <label for="respuesta1" id="respuesta1_label">A</label>
                     </div>
     
